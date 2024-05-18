@@ -1,13 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Berkshire Hathaway</title>
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
-    <h1>Berkshire Hathaway</h1>
-    <script src="./index.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Berkshire Hathaway</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./index.css" />
+    </head>
+    <body>
+        <div class="mainContainer">
+            <header class="mainHeader">
+                <nav>
+                    <header class="header">
+                        <nav class="nav container">
+                            <div class="nav__data">
+                                <span class="logo navLogo">
+                                    <span class="letterB">B</span
+                                    ><span class="remLetters">ERKSHIRE</span>
+                                    <span class="letterB">H</span
+                                    ><span class="remLetters">ATHAWAY</span>
+                                    <span class="remLettersSmall">INC.</span>
+                                </span>
+
+                                <div class="nav__toggle" id="nav-toggle">
+                                    <i class="ri-menu-line nav__burger"></i>
+                                    <i class="ri-close-line nav__close"></i>
+                                </div>
+                            </div>
+
+                            <!--=============== NAV MENU ===============-->
+                            <div class="nav__menu" id="nav-menu">
+                                <ul class="nav__list">
+                                    
+                                    <li>
+                                        <a href="#" class="nav__link">News</a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <div class="nav__link">Letters</div>
+
+                                        <ul class="dropdown__menu">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="dropdown__link"
+                                                    >Owner's Manual</a
+                                                >
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="dropdown__link"
+                                                >
+                                                    Warren's Letters
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="dropdown__link"
+                                                >
+                                                    Charlie's Letters
+                                                </a>
+                                            </li>
+                                            <!-- <li>
+                                                <a
+                                                    href="#"
+                                                    class="dropdown__link"
+                                                >
+                                                    Special Letters
+                                                </a>
+                                            </li> -->
+
+                                            <!--=============== DROPDOWN SUBMENU ===============-->
+                                            <!-- <li class="dropdown__subitem">
+                                                <div class="dropdown__link">
+                                                    Reports
+                                                </div>
+
+                                                <ul class="dropdown__submenu">
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="dropdown__sublink"
+                                                        >
+                                                            Documents
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="dropdown__sublink"
+                                                        >
+                                                            Payments
+                                                        </a>
+                                                    </li>
+
+                                                    <li>
+                                                        <a
+                                                            href="#"
+                                                            class="dropdown__sublink"
+                                                        >
+                                                            Refunds
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li> -->
+                                        </ul>
+                                    </li>
+                                    <!--=============== DROPDOWN 2 ===============-->
+                                    <li class="dropdown__item">
+                                        <div class="nav__link">
+                                            Subsidiaries
+                                        </div>
+
+                                        <ul class="dropdown__menu">
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="dropdown__link"
+                                                >
+                                                    Profiles
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="dropdown__link"
+                                                >
+                                                    Accounts
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    href="#"
+                                                    class="dropdown__link"
+                                                >
+                                                    Messages
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav__link"
+                                            >Reports</a
+                                        >
+                                    </li>
+
+                                    <!--=============== DROPDOWN 1 ===============-->
+                                    
+
+                                    <li>
+                                        <a href="#" class="nav__link"
+                                            >About Us</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav__link">More</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </header>
+                </nav>
+                <div class="hero">
+                    <div class="text">
+                        <h1>
+                            <span class="logo">
+                                <span class="letterB">B</span
+                                ><span class="remLetters">ERKSHIRE</span>
+                                <span class="letterB">H</span
+                                ><span class="remLetters">ATHAWAY</span> </span
+                            >invests with integrity, building futures.
+                        </h1>
+                        <p>
+                            Warren Buffett led Berkshire Hathaway: Diverse
+                            investments, unwavering integrity, global impact.
+                        </p>
+                        <button class="redButton">ANNUAL MEET</button>
+                    </div>
+                    <div class="image">
+                        <img
+                            src="./assets/images/warrenBuffett.png"
+                            alt="Picture of Warren Buffett"
+                        />
+                    </div>
+                </div>
+            </header>
+        </div>
+        <script src="./index.js"></script>
+    </body>
 </html>
