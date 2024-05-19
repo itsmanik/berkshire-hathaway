@@ -48,7 +48,7 @@ a {
     --customBlack: rgb(37, 37, 37);
     --customPink: #e3d8d8;
     --customWhite: rgb(210, 210, 210);
-    --customGrey: #262932;
+    --customGrey: #0c1227;
 }
 
 /* ----------------------- Header ------------------- */
@@ -627,7 +627,7 @@ a {
         padding-left: 5rem;
         width: 100%;
     }
-    
+
     .years .image {
         width: 80%;
         margin-bottom: 2rem;
@@ -635,5 +635,90 @@ a {
 
     .years p {
         margin-bottom: 2rem;
+    }
+}
+
+/* ----------------------- Stats ------------------- */
+
+.cardsSection {
+    background-color: rgb(245, 245, 245);
+    padding: 6rem 6rem;
+}
+
+.cardsDiv {
+    width: 100%;
+}
+
+.cards {
+    color: var(--customWhite);
+    margin: auto;
+    display: grid;
+    gap: 5rem;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.cards div {
+    background-color: var(--customGrey);
+    padding: 2rem 4rem;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    transition: all 0.3s linear;
+}
+
+.cards h2 {
+    margin-bottom: 1rem;
+}
+
+.cards p {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+.whiteButton {
+    padding: 0.8rem 1.8rem;
+    font-family: inherit;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: var(--customWhite);
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.whiteButton:hover {
+    color: var(--customBlack);
+    background-color: var(--customWhite);
+}
+
+@media screen and (max-width: 600px) {
+    .cards {
+        gap: 2rem;
+    }
+    .cards div {
+        background-color: var(--customGrey);
+        padding: 3rem 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 400px) {
+    .cards {
+        gap: 2rem;
+    }
+    .cards div {
+        background-color: var(--customGrey);
+        padding: 3rem 3rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        flex-direction: column;
     }
 }
