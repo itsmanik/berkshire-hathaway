@@ -17,13 +17,19 @@
                     <header class="header">
                         <nav class="nav container">
                             <div class="nav__data">
-                                <span class="logo navLogo">
-                                    <span class="letterB">B</span
-                                    ><span class="remLetters">ERKSHIRE</span>
-                                    <span class="letterB">H</span
-                                    ><span class="remLetters">ATHAWAY</span>
-                                    <span class="remLettersSmall">INC.</span>
-                                </span>
+                                <a href="index.html">
+                                    <span class="logo navLogo">
+                                        <span class="letterB">B</span
+                                        ><span class="remLetters"
+                                            >ERKSHIRE</span
+                                        >
+                                        <span class="letterB">H</span
+                                        ><span class="remLetters">ATHAWAY</span>
+                                        <span class="remLettersSmall"
+                                            >INC.</span
+                                        >
+                                    </span>
+                                </a>
 
                                 <div class="nav__toggle" id="nav-toggle">
                                     <i class="ri-menu-line nav__burger"></i>
@@ -35,7 +41,9 @@
                             <div class="nav__menu" id="nav-menu">
                                 <ul class="nav__list">
                                     <li>
-                                        <a href="#" class="nav__link">News</a>
+                                        <a href="news.html" class="nav__link"
+                                            >News</a
+                                        >
                                     </li>
                                     <li class="dropdown__item">
                                         <div class="nav__link">Letters</div>
@@ -65,17 +73,16 @@
                                                     Charlie's Letters
                                                 </a>
                                             </li>
-                                            <!-- <li>
+                                            <li>
                                                 <a
                                                     href="#"
                                                     class="dropdown__link"
                                                 >
                                                     Special Letters
                                                 </a>
-                                            </li> -->
-
+                                            </li>
                                             <!--=============== DROPDOWN SUBMENU ===============-->
-                                            <!-- <li class="dropdown__subitem">
+                                            <li class="dropdown__subitem">
                                                 <div class="dropdown__link">
                                                     Reports
                                                 </div>
@@ -108,7 +115,7 @@
                                                         </a>
                                                     </li>
                                                 </ul>
-                                            </li> -->
+                                            </li>
                                         </ul>
                                     </li>
                                     <!--=============== DROPDOWN 2 ===============-->
@@ -155,12 +162,41 @@
                                     <!--=============== DROPDOWN 1 ===============-->
 
                                     <li>
-                                        <a href="#" class="nav__link"
+                                        <a href="#aboutUsId" class="nav__link"
                                             >About Us</a
                                         >
                                     </li>
-                                    <li>
-                                        <a href="#" class="nav__link">More</a>
+                                    <li class="dropdown__item">
+                                        <div class="nav__link">MORE</div>
+
+                                        <ul class="dropdown__menu">
+                                            <li>
+                                                <a
+                                                    href="https://www.sec.gov/cgi-bin/browse-edgar?company=berkshire+hathaway&match=&CIK=&filenum=&State=&Country=&SIC=&owner=exclude&Find=Find+Companies&action=getcompany"
+                                                    class="dropdown__link"
+                                                >
+                                                    SEC Filings
+                                                </a>
+                                            </li>
+
+                                            <li>
+                                                <a
+                                                    href="https://www.berkshirehathaway.com/activisionltr.pdf"
+                                                    class="dropdown__link"
+                                                >
+                                                    Investment Facts
+                                                </a>
+                                            </li>
+
+                                            <!-- <li>
+                                                <a
+                                                    href="#"
+                                                    class="dropdown__link"
+                                                >
+                                                    Messages
+                                                </a>
+                                            </li> -->
+                                        </ul>
                                     </li>
                                 </ul>
                             </div>
@@ -182,9 +218,13 @@
                             multinational conglomerate with diverse business
                             holdings and significant investments.
                         </p>
-                        <button class="redButton button btn-two">
-                            ANNUAL MEET
-                        </button>
+                        <a
+                            href="https://www.berkshirehathaway.com/meet01/visguide2024.pdf"
+                        >
+                            <button class="redButton button btn-two">
+                                ANNUAL MEET
+                            </button>
+                        </a>
                     </div>
                     <div class="image">
                         <img
@@ -208,8 +248,8 @@
                             <span>annual revenue</span>
                         </div>
                         <div>
-                            <span class="number">$396k</span>
-                            <span>No of employees</span>
+                            <span class="number">396k</span>
+                            <span>Employees</span>
                         </div>
                         <div>
                             <span class="number">61</span>
@@ -237,7 +277,11 @@
                                 Berkshire Hathaway's transformation under Warren
                                 Buffett, highlighting strategic investments.
                             </p>
-                            <button class="redButton button">Buy Now</button>
+                            <a href="https://www.ebay.com/itm/185860708853">
+                                <button class="redButton button" onclick="">
+                                    Buy Now
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -254,7 +298,9 @@
                                 acquisitions and significant changes in its
                                 equity portfolio.
                             </p>
-                            <button class="whiteButton">Browse News</button>
+                            <a href="news.html">
+                                <button class="whiteButton">Browse News</button>
+                            </a>
                         </div>
                         <div class="card">
                             <h2>Reports</h2>
@@ -284,7 +330,7 @@
                                 transportation.
                             </p>
                             <button class="whiteButton">
-                                Browse Subsidiaries
+                                See Subsidiaries
                             </button>
                         </div>
                     </div>
@@ -294,7 +340,7 @@
             <section class="owenedSection">
                 <div class="ownedDiv">
                     <div class="owened">
-                        <h2>some of our owned companies</h2>
+                        <h2>some of our companies</h2>
                         <div class="companies">
                             <div class="image">
                                 <img
@@ -361,7 +407,7 @@
                 </div>
             </section>
 
-            <section class="aboutSection">
+            <section class="aboutSection" id="aboutUsId">
                 <div class="aboutContainer">
                     <div class="about">
                         <div class="text">
@@ -372,9 +418,7 @@
                                 for its diversified portfolio, which includes
                                 insurance, utilities, manufacturing, retail, and
                                 more. Founded on principles of integrity and
-                                long-term value creation, the company
-                                consistently demonstrates exceptional financial
-                                performance.
+                                long-term value creation.
                             </p>
                             <p>
                                 Berkshire Hathaway's commitment to strategic
@@ -382,14 +426,137 @@
                                 its reputation as a pillar of stability and
                                 success worldwide.
                             </p>
-                            <button class="whiteButton">Latest Updates</button>
+                            <a href="news.html">
+                                <button class="whiteButton">
+                                    Latest Updates
+                                </button>
+                            </a>
                         </div>
-                        <div class="image">
-                            <!-- <img src="./assets/images/building.png" alt="Main Building of Berkshire Hathaway"> -->
-                        </div>
+                        <div class="image"></div>
                     </div>
                 </div>
             </section>
+
+            <section class="clothesSection">
+                <div class="clothesDiv">
+                    <div class="clothes">
+                        <div>
+                            <img
+                                src="./assets/images/clothes.png"
+                                alt="Clothes Company logo"
+                            />
+                        </div>
+                        <p>
+                            Berkshire Hathaway's clothing shop, known as
+                            Berkshire Hathaway Direct Insurance Company (BHDIC),
+                            offers a wide range of high-quality apparel for both
+                            men and women, emphasizing comfort and style.
+                        </p>
+                        <a href="https://berkshirewear.com/">
+                            <button class="redButton button btn-two">
+                                Shop Now
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-column">
+                        <h4>About Us</h4>
+                        <div class="footer-item">
+                            <a href="/company-overview">Company Overview</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/leadership">Leadership</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/careers">Careers</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="news.html">News</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/contact">Contact Us</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Products</h4>
+                        <div class="footer-item">
+                            <a href="/products/overview">Product Overview</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/products/new">New Arrivals</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/products/best-sellers">Best Sellers</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/products/sale">On Sale</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/products/support">Product Support</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <div class="footer-item">
+                            <a href="/services/consulting">Consulting</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/services/custom">Custom Solutions</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/services/training">Training</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/services/support">Customer Support</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/services/faq">FAQ</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <div class="footer-item">
+                            <a href="/resources/blog">Blog</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/resources/ebooks">eBooks</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/resources/webinars">Webinars</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/resources/case-studies">Case Studies</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/resources/whitepapers">Whitepapers</a>
+                        </div>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <div class="footer-item">
+                            <a href="/legal/privacy-policy">Privacy Policy</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/legal/terms-of-service"
+                                >Terms of Service</a
+                            >
+                        </div>
+                        <div class="footer-item">
+                            <a href="/legal/cookie-policy">Cookie Policy</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/legal/disclaimer">Disclaimer</a>
+                        </div>
+                        <div class="footer-item">
+                            <a href="/legal/accessibility">Accessibility</a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
         <script src="./index.js"></script>
     </body>
