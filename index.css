@@ -42,8 +42,8 @@ a {
 /* ----------------------- Variables ------------------- */
 
 :root {
-    --customRed: #880f1b;
-    --customDarkRed: #6e0e17;
+    --customRed: #69111a;
+    --customDarkRed: #4a0a10;
     --customBlue: #151ba1;
     --customBlack: rgb(37, 37, 37);
     --customPink: #e3d8d8;
@@ -720,5 +720,50 @@ a {
         justify-content: space-between;
         align-items: start;
         flex-direction: column;
+    }
+}
+
+/* ----------------------- Companies ------------------- */
+
+.owenedSection {
+    background-color: var(--customPink);
+    padding: 0rem 6rem;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.owenedSection h2 {
+    margin-bottom: 4rem;
+    font-weight: normal;
+}
+
+.companies {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows:repeat(2, 1fr) ;
+    gap: 2rem;
+}
+
+.companies img {
+    width: 9rem;
+}
+
+@media screen and (max-width: 1210px) {
+    .companies {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows:repeat(2, 1fr) ;
+        gap: 2rem;
+    }
+}
+
+
+@media screen and (max-width: 814px) {
+    .companies {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:repeat(4, 1fr) ;
+        gap: 1rem;
     }
 }
