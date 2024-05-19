@@ -15,9 +15,11 @@ h1 {
 }
 
 p {
-    font-size: 1rem;
+    font-size: 0.9rem;
     word-spacing: 5px;
     line-height: 1.2;
+    letter-spacing: 2px;
+    word-spacing: 5px;
 }
 
 body {
@@ -676,7 +678,7 @@ a {
 
 .cards p {
     margin-bottom: 1rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .whiteButton {
@@ -741,7 +743,7 @@ a {
 .companies {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows:repeat(2, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
 }
 
@@ -753,17 +755,99 @@ a {
     .companies {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows:repeat(2, 1fr) ;
+        grid-template-rows: repeat(2, 1fr);
         gap: 2rem;
     }
 }
-
 
 @media screen and (max-width: 814px) {
     .companies {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows:repeat(4, 1fr) ;
+        grid-template-rows: repeat(4, 1fr);
         gap: 1rem;
+    }
+}
+
+/* ----------------------- About ------------------- */
+
+.aboutSection {
+    background-color: var(--customGrey);
+    color: var(--customWhite);
+    margin-top: 5rem;
+}
+
+.about {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    height: 50rem;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: var(--customWhite);
+}
+
+.about .text {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin-left: 6rem;
+    margin-right: 5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.about h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about p {
+    line-height: 1.8rem;
+    margin-bottom: 1.7rem;
+    font-size: 0.8rem;
+}
+
+.about .image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    background-image: url("./assets/images/building.png");
+}
+
+.about button {
+    border: 1px solid white;
+    color: white;
+    font-family: inherit;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 1100px) {
+    .about .text {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        margin-left: 3rem;
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media screen and (max-width: 800px) {
+    .about {
+        overflow: hidden;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+        height: unset;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        color: var(--customWhite);
     }
 }
