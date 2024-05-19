@@ -39,6 +39,7 @@ ul {
 }
 
 a {
+    color: inherit;
     text-decoration: none;
 }
 
@@ -179,6 +180,10 @@ html {
 
 .nav__close {
     opacity: 0;
+}
+
+.statss {
+    color: var(--customPink) !important;
 }
 
 /* Navigation for mobile devices */
@@ -1029,12 +1034,14 @@ footer {
     padding: 5px 15px 4px 6px;
     color: black;
 }
-/* Commented Backslash Hack hides rule from IE5-Mac \*/
+
+
 .news #tabs a span {
     float: none;
     transition: all 0.2s ease;
 }
-/* End IE5-Mac hack */
+
+
 .news #tabs a:hover span {
     color: var(--customBlue);
 }
@@ -1043,4 +1050,30 @@ footer {
 }
 .news #tabs a:hover span {
     background-position: 100% -42px;
+}
+
+/* ----------------------- SUBSIDIARIES ------------------- */
+
+.sub {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.sub td {
+    border: 1px solid var(--customRed);
+    /* display: none; */
+}
+
+.sub * {
+    padding: 1rem;
+    color: var(--customBlack);
+    text-align: center;
+}
+
+.sub td:hover {
+    background-color: var(--customRed);
+}
+
+.sub td:hover * {
+    color: var(--customWhite);
 }
